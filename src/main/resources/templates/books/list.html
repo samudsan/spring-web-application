@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> Spring Framework </title>
+</head>
+
+<body>
+<h1>Book List</h1>
+<table>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.id}">12312431231231231231231 </td>
+        <td th:text="${book.title}">Never Fin</td>
+        <td th:text="${book.publisher.state}">Goa</td>
+    </tr>
+
+    <tr th:each="book : ${books}">
+        <td th:text="${book.id}">12312431231231231231231 </td>
+        <td th:text="${book.title}">Never Fin</td>
+        <td th:text="${book.publisher.state}">Goa</td>
+    </tr>
+</table>
+</body>
+</html>
